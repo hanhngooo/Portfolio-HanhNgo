@@ -1,0 +1,263 @@
+/* Master style*/
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    
+}
+/*Nav Style*/
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid gray;
+}
+.left-side{
+    display: flex;
+    margin-left: 30px
+}
+
+.right-side {
+    margin-right: 30px
+}
+
+.nav-wrapper > .left-side > div {
+    margin-right: 20px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+
+} 
+.nav-link-wrapper {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+
+}
+.nav-link-wrapper a {
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: text 0.5s;
+    
+}
+
+.nav-link-wrapper:hover {
+    border-bottom: 1px solid black;
+    
+}
+.nav-link-wrapper a:hover{
+    color: black;
+}
+.active-nav-link {
+    border-bottom: 1px solid black;
+
+}
+
+.active-nav-link a {
+    color: black !important;
+}
+
+/* Home style*/
+.content-wrapper {
+    background-image: url(images/profile1.JPG); 
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    width: 100%;
+
+}
+.content-wrapper h1 {
+    position: absolute;
+    margin-left: 10%;
+    margin-top: 17%;
+    padding: 2%;
+   border: 3px solid white;
+    background-color: rgb(252, 248, 248, 0.5);
+    border-radius: 20px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    font-size: 300%;
+  
+    cursor: context-menu;
+    letter-spacing: 0.03em;
+}
+
+.content-wrapper span:hover {
+    color: rgb(50, 211, 203);
+    transition: all 0.5s;
+}
+span.name {
+    color: rgb(255, 21, 21)
+}
+
+span.m-left {
+    margin-left: -10px;
+}
+
+/*About page style*/
+.profile-image-wrapper img {
+    width: 100%
+}
+
+.about1-content-wrapper {
+    font-family: 'Lato', sans-serif;
+    margin-top: 3%;
+    font-size: 120%;
+    word-spacing: 0.1em;
+
+}
+
+h1.welcome {
+    margin-top: 3%;
+    padding-bottom: 3%;
+    font-size: 250%;
+    font-weight: 300%;
+    color: rgb(84, 197, 197);
+    font-family: 'Merriweather', serif;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.about2-content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    background-color: white;
+    padding-right: 10%;
+    padding-left: 10%;
+    
+
+}
+.about3-content-wrapper {
+    position: relative;
+    padding: 3%;
+
+}
+
+h2 {
+    margin-left: 20%;
+    margin-right: 20%;
+    font-family: 'Merriweather', serif;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 300;
+    font-size: 250%;
+    text-align: center;
+    color: rgb(43, 179, 189);
+    padding-bottom: 4%;
+    border-bottom: 0.3px solid rgb(84, 197, 197);
+
+}
+.about4-content-wrapper {
+    padding-top: 2%;
+    background-color: rgb(249, 237, 253);
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+h3{
+    font-family: 'Merriweather', serif;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 200;
+    font-size: 150%;
+    color: rgb(43, 179, 189);
+
+}
+
+.education1 {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+.education2 {
+    position: relative;
+    padding: 2%;
+
+
+}
+.school, .major {
+    color: rgb(255, 72, 72);
+}
+.career1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.career2 {
+    position: relative;
+    padding: 2%;
+}
+.company, .title {
+    color: rgb(255, 72, 72);
+   
+}
+
+/*Interest Style*/
+.content-interests-wrapper {
+    margin-left: 0px;
+}
+.interests-items-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+.interests-item-wrapper {
+    position: relative;
+}
+.interests-img-background {
+    height: 350px;
+    width: 100%;
+    background-size: cover; /*crop hinh cho bang nhau*/
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img-text-wrapper {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    font-size: 80%;
+
+}
+.logo-wrapper img {
+    width: 50%;
+    margin-bottom: 20px;
+    opacity: 0;
+
+}
+
+
+/* Needs to be more specific with selector*/
+.img-text-wrapper .subtitle {
+    transition: 1s;
+    font-weight: 600;
+    word-spacing: 0.1em;
+    color: transparent;
+}
+
+.img-text-wrapper:hover .subtitle {
+    font-weight: 600;
+    word-spacing: 0.1em;
+    color: rgb(18, 71, 184);
+}
+
+.img-text-wrapper:hover img {
+  opacity: 1;
+  transition: 1s;
+}
+
+.img-whiten {
+    transition: 1s;
+    opacity: 0.4;
+    color: white ;
+
+}
+
